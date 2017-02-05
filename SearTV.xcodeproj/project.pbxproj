@@ -12,6 +12,7 @@
 		79C8FF671E47C3AF00C190B0 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 79C8FF651E47C3AF00C190B0 /* Main.storyboard */; };
 		79C8FF691E47C3AF00C190B0 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 79C8FF681E47C3AF00C190B0 /* Assets.xcassets */; };
 		79C8FF6C1E47C3AF00C190B0 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 79C8FF6A1E47C3AF00C190B0 /* LaunchScreen.storyboard */; };
+		79C8FF741E47C50000C190B0 /* .gitignore in Resources */ = {isa = PBXBuildFile; fileRef = 79C8FF731E47C50000C190B0 /* .gitignore */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,6 +23,7 @@
 		79C8FF681E47C3AF00C190B0 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		79C8FF6B1E47C3AF00C190B0 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		79C8FF6D1E47C3AF00C190B0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		79C8FF731E47C50000C190B0 /* .gitignore */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = .gitignore; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.csh; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -40,6 +42,7 @@
 			children = (
 				79C8FF601E47C3AF00C190B0 /* SearTV */,
 				79C8FF5F1E47C3AF00C190B0 /* Products */,
+				79C8FF731E47C50000C190B0 /* .gitignore */,
 			);
 			sourceTree = "<group>";
 		};
@@ -123,6 +126,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				79C8FF741E47C50000C190B0 /* .gitignore in Resources */,
 				79C8FF6C1E47C3AF00C190B0 /* LaunchScreen.storyboard in Resources */,
 				79C8FF691E47C3AF00C190B0 /* Assets.xcassets in Resources */,
 				79C8FF671E47C3AF00C190B0 /* Main.storyboard in Resources */,
