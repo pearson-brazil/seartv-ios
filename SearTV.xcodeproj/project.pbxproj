@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		709610D4EFC973C08783E7DE /* Pods_SearTV.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2C9F7469CC019039B7A7EF7E /* Pods_SearTV.framework */; };
 		79C8FF621E47C3AF00C190B0 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79C8FF611E47C3AF00C190B0 /* AppDelegate.swift */; };
 		79C8FF641E47C3AF00C190B0 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79C8FF631E47C3AF00C190B0 /* ViewController.swift */; };
 		79C8FF671E47C3AF00C190B0 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 79C8FF651E47C3AF00C190B0 /* Main.storyboard */; };
@@ -16,6 +17,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		2C9F7469CC019039B7A7EF7E /* Pods_SearTV.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SearTV.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		69A42C4B01E3F201EDF26DAF /* Pods-SearTV.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SearTV.release.xcconfig"; path = "Pods/Target Support Files/Pods-SearTV/Pods-SearTV.release.xcconfig"; sourceTree = "<group>"; };
 		79C8FF5E1E47C3AF00C190B0 /* SearTV.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SearTV.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		79C8FF611E47C3AF00C190B0 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		79C8FF631E47C3AF00C190B0 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -24,6 +27,7 @@
 		79C8FF6B1E47C3AF00C190B0 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		79C8FF6D1E47C3AF00C190B0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		79C8FF731E47C50000C190B0 /* .gitignore */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = .gitignore; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.csh; };
+		FE40A65483F5C3898900EE2B /* Pods-SearTV.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SearTV.debug.xcconfig"; path = "Pods/Target Support Files/Pods-SearTV/Pods-SearTV.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -31,6 +35,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				709610D4EFC973C08783E7DE /* Pods_SearTV.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -42,6 +47,8 @@
 			children = (
 				79C8FF601E47C3AF00C190B0 /* SearTV */,
 				79C8FF5F1E47C3AF00C190B0 /* Products */,
+				9B4E6129CA7900FC41DB7251 /* Pods */,
+				7BCE34BBE61193ECED63E7E1 /* Frameworks */,
 				79C8FF731E47C50000C190B0 /* .gitignore */,
 			);
 			sourceTree = "<group>";
@@ -67,6 +74,23 @@
 			path = SearTV;
 			sourceTree = "<group>";
 		};
+		7BCE34BBE61193ECED63E7E1 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				2C9F7469CC019039B7A7EF7E /* Pods_SearTV.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		9B4E6129CA7900FC41DB7251 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				FE40A65483F5C3898900EE2B /* Pods-SearTV.debug.xcconfig */,
+				69A42C4B01E3F201EDF26DAF /* Pods-SearTV.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -74,9 +98,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 79C8FF701E47C3AF00C190B0 /* Build configuration list for PBXNativeTarget "SearTV" */;
 			buildPhases = (
+				D401B81DEDABC0BA07E1D6C3 /* [CP] Check Pods Manifest.lock */,
 				79C8FF5A1E47C3AF00C190B0 /* Sources */,
 				79C8FF5B1E47C3AF00C190B0 /* Frameworks */,
 				79C8FF5C1E47C3AF00C190B0 /* Resources */,
+				AB2BFE31F0FF72E80DBA76FC /* [CP] Embed Pods Frameworks */,
+				354681F3D0728350A5369ED0 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -134,6 +161,54 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		354681F3D0728350A5369ED0 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-SearTV/Pods-SearTV-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		AB2BFE31F0FF72E80DBA76FC /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-SearTV/Pods-SearTV-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		D401B81DEDABC0BA07E1D6C3 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		79C8FF5A1E47C3AF00C190B0 /* Sources */ = {
@@ -260,6 +335,7 @@
 		};
 		79C8FF711E47C3AF00C190B0 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = FE40A65483F5C3898900EE2B /* Pods-SearTV.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = SearTV/Info.plist;
@@ -272,6 +348,7 @@
 		};
 		79C8FF721E47C3AF00C190B0 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 69A42C4B01E3F201EDF26DAF /* Pods-SearTV.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = SearTV/Info.plist;
@@ -301,6 +378,7 @@
 				79C8FF721E47C3AF00C190B0 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
