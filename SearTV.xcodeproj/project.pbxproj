@@ -64,6 +64,7 @@
 		79C8FF601E47C3AF00C190B0 /* SearTV */ = {
 			isa = PBXGroup;
 			children = (
+				79C8FF751E48168C00C190B0 /* Models */,
 				79C8FF611E47C3AF00C190B0 /* AppDelegate.swift */,
 				79C8FF631E47C3AF00C190B0 /* ViewController.swift */,
 				79C8FF651E47C3AF00C190B0 /* Main.storyboard */,
@@ -72,6 +73,13 @@
 				79C8FF6D1E47C3AF00C190B0 /* Info.plist */,
 			);
 			path = SearTV;
+			sourceTree = "<group>";
+		};
+		79C8FF751E48168C00C190B0 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Models;
 			sourceTree = "<group>";
 		};
 		7BCE34BBE61193ECED63E7E1 /* Frameworks */ = {
