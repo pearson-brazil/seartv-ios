@@ -6,5 +6,7 @@ target 'SearTV' do
   use_frameworks!
 
   # Pods for SearTV
+  
+  pod 'Kingfisher', '~> 3.0'
 
 end

@@ -9,11 +9,20 @@
 /* Begin PBXBuildFile section */
 		709610D4EFC973C08783E7DE /* Pods_SearTV.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2C9F7469CC019039B7A7EF7E /* Pods_SearTV.framework */; };
 		79C8FF621E47C3AF00C190B0 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79C8FF611E47C3AF00C190B0 /* AppDelegate.swift */; };
-		79C8FF641E47C3AF00C190B0 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79C8FF631E47C3AF00C190B0 /* ViewController.swift */; };
 		79C8FF671E47C3AF00C190B0 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 79C8FF651E47C3AF00C190B0 /* Main.storyboard */; };
 		79C8FF691E47C3AF00C190B0 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 79C8FF681E47C3AF00C190B0 /* Assets.xcassets */; };
 		79C8FF6C1E47C3AF00C190B0 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 79C8FF6A1E47C3AF00C190B0 /* LaunchScreen.storyboard */; };
 		79C8FF741E47C50000C190B0 /* .gitignore in Resources */ = {isa = PBXBuildFile; fileRef = 79C8FF731E47C50000C190B0 /* .gitignore */; };
+		79EFA6F31E4EA5C600BBFC01 /* GenresViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79EFA6F21E4EA5C600BBFC01 /* GenresViewController.swift */; };
+		79EFA6F61E4EBD1100BBFC01 /* Rest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79EFA6F51E4EBD1100BBFC01 /* Rest.swift */; };
+		79EFA6FA1E4EBE2300BBFC01 /* GenreService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79EFA6F91E4EBE2300BBFC01 /* GenreService.swift */; };
+		79EFA6FC1E4EBEB800BBFC01 /* GenreModels.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79EFA6FB1E4EBEB800BBFC01 /* GenreModels.swift */; };
+		79EFA6FE1E4EC81800BBFC01 /* GenresInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79EFA6FD1E4EC81800BBFC01 /* GenresInteractor.swift */; };
+		79EFA7021E4ED5FA00BBFC01 /* MoviesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79EFA7011E4ED5FA00BBFC01 /* MoviesViewController.swift */; };
+		79EFA7041E4ED61900BBFC01 /* MovieModels.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79EFA7031E4ED61900BBFC01 /* MovieModels.swift */; };
+		79EFA7061E4ED63200BBFC01 /* MovieService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79EFA7051E4ED63200BBFC01 /* MovieService.swift */; };
+		79EFA7081E4ED63F00BBFC01 /* MovieInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79EFA7071E4ED63F00BBFC01 /* MovieInteractor.swift */; };
+		79EFA70A1E4ED74500BBFC01 /* MovieCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79EFA7091E4ED74500BBFC01 /* MovieCollectionViewCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -21,12 +30,21 @@
 		69A42C4B01E3F201EDF26DAF /* Pods-SearTV.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SearTV.release.xcconfig"; path = "Pods/Target Support Files/Pods-SearTV/Pods-SearTV.release.xcconfig"; sourceTree = "<group>"; };
 		79C8FF5E1E47C3AF00C190B0 /* SearTV.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SearTV.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		79C8FF611E47C3AF00C190B0 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		79C8FF631E47C3AF00C190B0 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		79C8FF661E47C3AF00C190B0 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		79C8FF681E47C3AF00C190B0 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		79C8FF6B1E47C3AF00C190B0 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		79C8FF6D1E47C3AF00C190B0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		79C8FF731E47C50000C190B0 /* .gitignore */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = .gitignore; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.csh; };
+		79EFA6F21E4EA5C600BBFC01 /* GenresViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GenresViewController.swift; sourceTree = "<group>"; };
+		79EFA6F51E4EBD1100BBFC01 /* Rest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Rest.swift; sourceTree = "<group>"; };
+		79EFA6F91E4EBE2300BBFC01 /* GenreService.swift */ = {isa = PBXFileReference; fileEncoding = 4; indentWidth = 2; lastKnownFileType = sourcecode.swift; path = GenreService.swift; sourceTree = "<group>"; tabWidth = 2; };
+		79EFA6FB1E4EBEB800BBFC01 /* GenreModels.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GenreModels.swift; sourceTree = "<group>"; };
+		79EFA6FD1E4EC81800BBFC01 /* GenresInteractor.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GenresInteractor.swift; sourceTree = "<group>"; };
+		79EFA7011E4ED5FA00BBFC01 /* MoviesViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MoviesViewController.swift; sourceTree = "<group>"; };
+		79EFA7031E4ED61900BBFC01 /* MovieModels.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MovieModels.swift; sourceTree = "<group>"; };
+		79EFA7051E4ED63200BBFC01 /* MovieService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MovieService.swift; sourceTree = "<group>"; };
+		79EFA7071E4ED63F00BBFC01 /* MovieInteractor.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MovieInteractor.swift; sourceTree = "<group>"; };
+		79EFA7091E4ED74500BBFC01 /* MovieCollectionViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MovieCollectionViewCell.swift; sourceTree = "<group>"; };
 		FE40A65483F5C3898900EE2B /* Pods-SearTV.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SearTV.debug.xcconfig"; path = "Pods/Target Support Files/Pods-SearTV/Pods-SearTV.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -64,9 +82,9 @@
 		79C8FF601E47C3AF00C190B0 /* SearTV */ = {
 			isa = PBXGroup;
 			children = (
-				79C8FF751E48168C00C190B0 /* Models */,
+				79EFA6F41E4EBCD100BBFC01 /* Service */,
+				79EFA6F01E4EA59C00BBFC01 /* Scenes */,
 				79C8FF611E47C3AF00C190B0 /* AppDelegate.swift */,
-				79C8FF631E47C3AF00C190B0 /* ViewController.swift */,
 				79C8FF651E47C3AF00C190B0 /* Main.storyboard */,
 				79C8FF681E47C3AF00C190B0 /* Assets.xcassets */,
 				79C8FF6A1E47C3AF00C190B0 /* LaunchScreen.storyboard */,
@@ -75,11 +93,44 @@
 			path = SearTV;
 			sourceTree = "<group>";
 		};
-		79C8FF751E48168C00C190B0 /* Models */ = {
+		79EFA6F01E4EA59C00BBFC01 /* Scenes */ = {
 			isa = PBXGroup;
 			children = (
+				79EFA7001E4ED5E300BBFC01 /* Movies */,
+				79EFA6FF1E4ECD5900BBFC01 /* Genre */,
 			);
-			name = Models;
+			name = Scenes;
+			sourceTree = "<group>";
+		};
+		79EFA6F41E4EBCD100BBFC01 /* Service */ = {
+			isa = PBXGroup;
+			children = (
+				79EFA6F51E4EBD1100BBFC01 /* Rest.swift */,
+			);
+			name = Service;
+			sourceTree = "<group>";
+		};
+		79EFA6FF1E4ECD5900BBFC01 /* Genre */ = {
+			isa = PBXGroup;
+			children = (
+				79EFA6F91E4EBE2300BBFC01 /* GenreService.swift */,
+				79EFA6F21E4EA5C600BBFC01 /* GenresViewController.swift */,
+				79EFA6FD1E4EC81800BBFC01 /* GenresInteractor.swift */,
+				79EFA6FB1E4EBEB800BBFC01 /* GenreModels.swift */,
+			);
+			name = Genre;
+			sourceTree = "<group>";
+		};
+		79EFA7001E4ED5E300BBFC01 /* Movies */ = {
+			isa = PBXGroup;
+			children = (
+				79EFA7011E4ED5FA00BBFC01 /* MoviesViewController.swift */,
+				79EFA7031E4ED61900BBFC01 /* MovieModels.swift */,
+				79EFA7051E4ED63200BBFC01 /* MovieService.swift */,
+				79EFA7071E4ED63F00BBFC01 /* MovieInteractor.swift */,
+				79EFA7091E4ED74500BBFC01 /* MovieCollectionViewCell.swift */,
+			);
+			name = Movies;
 			sourceTree = "<group>";
 		};
 		7BCE34BBE61193ECED63E7E1 /* Frameworks */ = {
@@ -223,8 +274,17 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				79C8FF641E47C3AF00C190B0 /* ViewController.swift in Sources */,
+				79EFA7041E4ED61900BBFC01 /* MovieModels.swift in Sources */,
+				79EFA6F31E4EA5C600BBFC01 /* GenresViewController.swift in Sources */,
 				79C8FF621E47C3AF00C190B0 /* AppDelegate.swift in Sources */,
+				79EFA6FC1E4EBEB800BBFC01 /* GenreModels.swift in Sources */,
+				79EFA6F61E4EBD1100BBFC01 /* Rest.swift in Sources */,
+				79EFA7081E4ED63F00BBFC01 /* MovieInteractor.swift in Sources */,
+				79EFA6FE1E4EC81800BBFC01 /* GenresInteractor.swift in Sources */,
+				79EFA7061E4ED63200BBFC01 /* MovieService.swift in Sources */,
+				79EFA70A1E4ED74500BBFC01 /* MovieCollectionViewCell.swift in Sources */,
+				79EFA7021E4ED5FA00BBFC01 /* MoviesViewController.swift in Sources */,
+				79EFA6FA1E4EBE2300BBFC01 /* GenreService.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -268,6 +328,7 @@
 				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
 				CLANG_WARN_SUSPICIOUS_MOVES = YES;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
@@ -317,6 +378,7 @@
 				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
 				CLANG_WARN_SUSPICIOUS_MOVES = YES;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
