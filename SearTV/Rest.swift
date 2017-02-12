@@ -38,7 +38,7 @@ protocol JSONValidation {
 }
 
 class Rest {
-  static var baseURL = "https://api.themoviedb.org/3/%@?api_key=0d2d0307fd89b460e176ba0033dc5c46&language=pt-BR"
+  static var baseURL = "https://api.themoviedb.org/3/%@?api_key=0d2d0307fd89b460e176ba0033dc5c46&language=pt-BR%@"
   static var defaultHeader: [String:String]? = ["Content-Type": "application/json"]
   
   static private let session = URLSession.shared
@@ -52,13 +52,20 @@ class Rest {
 
   internal class func connect(method: String,
                              path: String,
+                             query: String? = "",
                              timeout: TimeInterval? = 30,
                              redirects: Bool? = true,
                              headers: [String:String]? = defaultHeader,
                              jsonObject: JSONObject? = nil,
                              completion: @escaping (JSONResult) -> Void) throws {
     // Setup URL
-    let appendedUrl = String(format: baseURL, path)
+    
+    var queryString = query ?? ""
+    if !queryString.isEmpty {
+      queryString = "&\(queryString)"
+    }
+    
+    let appendedUrl = String(format: baseURL, path, queryString)
     guard let components = URLComponents(string: appendedUrl) else {
       throw ValidationError.invalid("baseURL", baseURL)
     }
@@ -109,14 +116,14 @@ class Rest {
   // MARK: - Public methods
 
 
-  class func get(path: String, headers: [String:String]? = defaultHeader, completion:@escaping (JSONResult) -> Void) {
+  class func get(path: String, query: String? = "", headers: [String:String]? = defaultHeader, completion:@escaping (JSONResult) -> Void) {
     do {
       var allHeaders = defaultHeader
       for (key, value) in headers! {
         allHeaders?[key] = value
       }
       
-      try connect(method: HTTPMethod.get.rawValue, path: path, redirects: false, headers: allHeaders,
+      try connect(method: HTTPMethod.get.rawValue, path: path, query: query, redirects: false, headers: allHeaders,
                   completion: completion)
     } catch {
       completion(error as! JSONResult)
