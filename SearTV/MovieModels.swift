@@ -21,7 +21,7 @@ struct Movie {
       let overview: String?
       let release_date: String?
       let genre_ids: [Int]?
-      let id: Int?
+      let id: Int
       let original_title: String?
       let original_language: String?
       let title: String?
@@ -37,7 +37,7 @@ struct Movie {
         overview = json?["overview"] as? String
         release_date = json?["release_date"] as? String
         genre_ids = json?["genre_ids"] as? [Int]
-        id = json?["id"] as? Int
+        id = (json?["id"] as? Int) ?? -1
         original_title = json?["original_title"] as? String
         original_language = json?["original_language"] as? String
         title = json?["title"] as? String
@@ -62,6 +62,7 @@ struct Movie {
   }
   
   struct ViewModel {
+    let id: Int
     let posterPath: String
   }
 }

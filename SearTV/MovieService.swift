@@ -56,4 +56,27 @@ class MovieService {
       }
     }
   }
+  
+  class func getMovie(withId id: Int, completion: @escaping (Result<MovieDetails.ResponseModel>) -> Void)  {
+    Rest.get(path: "movie/\(id)") { jsonResult in
+      
+      do {
+        switch jsonResult {
+        case .success(let json):
+          
+          guard let _ = json["id"] as? Int else {
+            throw ReturnError.userMessage("Não foi possível obter os detalhes do filme. Por favor tente novamente mais tarde")
+          }
+          
+          let detail = MovieDetails.ResponseModel(with: json)
+          
+          completion(Result.success(result: detail))
+        case .failure(let error):
+          throw error
+        }
+      } catch {
+        completion(Result.failure(error: error as! ReturnError))
+      }
+    }
+  }
 }

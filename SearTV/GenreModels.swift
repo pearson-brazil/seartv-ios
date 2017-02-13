@@ -12,11 +12,11 @@ import Foundation
 struct Genre {
     struct ResponseModel {
         let name: String?
-        let id: String?
+        let id: Int?
     
         init(with json: JSONObject?) {
             name = json?["name"] as? String
-            id = json?["id"] as? String
+            id = json?["id"] as? Int
         }
     }
     

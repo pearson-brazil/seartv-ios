@@ -90,7 +90,10 @@ class MoviesViewController: UIViewController {
 
 extension MoviesViewController: UICollectionViewDelegate, UICollectionViewDataSource {
   func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
-    
+    if case .success(let movies) = content {
+      MoviesInteractor.shared.setSelectedMovie(with: movies[indexPath.row])
+      performSegue(withIdentifier: "ShowMovieDetails", sender: nil)
+    }
   }
   
   func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
